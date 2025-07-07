@@ -12,7 +12,7 @@ crash.log
 *.log
 
 # Sensitive variable override files
-terraform.tfvars
+
 *.auto.tfvars
 
 # Ignore override files as they are not typically checked in
