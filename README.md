@@ -78,9 +78,11 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 ```
-After successful deployment, note the Terraform outputs:
+**After successful deployment, note the Terraform outputs:**
+```
 test_data_store_id = "demo_store_id"
 test_engine_id = "demo_engine_app"
+```
 
 ## 📥 Load Data into RAG Data Store
 
@@ -123,7 +125,9 @@ Sample Test Queries
 python# Example queries you can copy and paste for testing
 QUERY = "who is ceo of google? what is total revenue of google?"
 
-# Additional test queries: You just need to replace the query in "query.py"
+**Additional test queries: You just need to replace the query in "query.py"**
+
+```python
 QUERY = "What were Google Cloud earnings in 2024?"
 QUERY = "Google Cloud financial results and revenue growth"
 QUERY = "What is Google's market capitalization and stock performance?"
@@ -134,6 +138,7 @@ QUERY = "What are Google's main business segments and revenue sources?"
 QUERY = "Google's investment in AI and machine learning initiatives"
 QUERY = "YouTube revenue and user engagement statistics"
 QUERY = "Google's data center locations and infrastructure investments"
+```
 
 ## 🧹 Clean Up Resources
 
