@@ -78,6 +78,9 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 ```
+After successful deployment, note the Terraform outputs:
+test_data_store_id = "demo_store_id"
+test_engine_id = "demo_engine_app"
 
 ## 📥 Load Data into RAG Data Store
 
