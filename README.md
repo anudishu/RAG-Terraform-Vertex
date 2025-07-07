@@ -11,6 +11,7 @@ This project demonstrates how to deploy a RAG architecture on **Google Cloud Pla
 * A Google Cloud project with billing enabled
 * IAM role: Project Owner or Editor
 * Basic knowledge of Google Cloud services and Terraform
+* BAsic Knowledge of Generative AI, LLM and Embedding
 
 ## ⚙️ Deployment Steps
 
@@ -34,6 +35,12 @@ gcloud services enable \
     storage.googleapis.com \
     discoveryengine.googleapis.com
 ```
+Verify APIs are enabled in the console:
+
+Go to Google Cloud Console → search for "AI Application"
+Navigate to the AI Applications page
+Click "Continue and activate the API" if prompted
+Confirm all required APIs are listed and active
 
 ### 4️⃣ Set Environment Variables
 
@@ -53,6 +60,11 @@ Authenticate your environment to allow Terraform and Python scripts to access Go
 ```bash
 gcloud auth application-default login
 ```
+Follow the authentication flow:
+
+Copy the provided link from the terminal
+Open it in your browser and login with your GCP account email
+Copy the authorization code and paste it back in the terminal
 
 ### 6️⃣ Initialize and Apply Terraform Configuration
 
@@ -103,6 +115,22 @@ Lets run with query on terminal.Open `query.py` Go to the end of file, and set t
 ```bash
 python query.py
 ```
+
+Sample Test Queries
+python# Example queries you can copy and paste for testing
+QUERY = "who is ceo of google? what is total revenue of google?"
+
+# Additional test queries: You just need to replace the query in "query.py"
+QUERY = "What were Google Cloud earnings in 2024?"
+QUERY = "Google Cloud financial results and revenue growth"
+QUERY = "What is Google's market capitalization and stock performance?"
+QUERY = "Google advertising revenue breakdown by quarter"
+QUERY = "Alphabet Inc financial highlights and key metrics"
+QUERY = "Google Cloud vs AWS market share comparison"
+QUERY = "What are Google's main business segments and revenue sources?"
+QUERY = "Google's investment in AI and machine learning initiatives"
+QUERY = "YouTube revenue and user engagement statistics"
+QUERY = "Google's data center locations and infrastructure investments"
 
 ## 🧹 Clean Up Resources
 

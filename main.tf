@@ -7,7 +7,7 @@ resource "google_discovery_engine_data_store" "test-ds" {
   content_config              = "CONTENT_REQUIRED"
   solution_types              = ["SOLUTION_TYPE_SEARCH"]
   create_advanced_site_search = false
-  project                     = "modelarmor-463317"
+  project                     = var.project_id
 }
 
 # Create Test Serach Engine
@@ -24,6 +24,6 @@ resource "google_discovery_engine_search_engine" "test-engine" {
   search_engine_config {
     search_add_ons = ["SEARCH_ADD_ON_LLM"]
   }
-  project = "modelarmor-463317"
+  project = var.project_id
 }
 
