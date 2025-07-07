@@ -72,7 +72,7 @@ def search_sample(
 QUERY = "who is ceo of google? what is total revenue of google?"
 
 
-PROJECT_ID = "projecta-418002"
+PROJECT_ID = "modelarmor-463317"
 DATASTORE_ID = "demo_store_id"
 LOCATION = "global"
 

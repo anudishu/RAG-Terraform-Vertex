@@ -56,7 +56,7 @@ source_documents_gs_uri = (
     "gs://cloud-samples-data/gen-app-builder/search/alphabet-investor-pdfs"
 )
 
-PROJECT_ID = "projecta-418002"
+PROJECT_ID = "modelarmor-463317"
 DATASTORE_ID = "demo_store_id"
 LOCATION = "global"
 print(" Starting loading data into datastore")
