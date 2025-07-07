@@ -10,17 +10,7 @@ This project demonstrates how to deploy a RAG architecture on **Google Cloud Pla
 
 * A Google Cloud project with billing enabled
 * IAM role: Project Owner or Editor
-* Installed:
-   * gcloud CLI
-   * Terraform
-   * Python 3.x
 * Basic knowledge of Google Cloud services and Terraform
-
-## Required Pip Packages
-
-```bash
-pip install google-cloud-storage google-api-core google-cloud-discoveryengine
-```
 
 ## ⚙️ Deployment Steps
 
@@ -68,10 +58,8 @@ gcloud auth application-default login
 
 This will provision all required infrastructure on Google Cloud:
 
-* Vertex AI resources
-* GCS bucket for storing documents
 * Discovery Engine Data Store
-* (Optional) App Engine or Cloud Run for frontend/backend services
+* Discovery Enginer Search Engine
 
 ```bash
 terraform init
@@ -85,7 +73,7 @@ After infrastructure is deployed:
 
 ### 🔧 1. Update loaddata.py
 
-Open `loaddata.py` and set the correct project and datastore IDs:
+Open `loaddata.py` Go to the end of file, and set the correct project and datastore IDs:
 
 ```python
 PROJECT_ID = "your-gcp-project-id"
@@ -100,7 +88,7 @@ You can find the DATASTORE_ID in the Vertex AI Search console or from Terraform 
 python loaddata.py
 ```
 
-This script will upload documents (PDF, HTML, etc.) into your configured Vertex AI Search data store.
+This script will upload public documents("gs://cloud-samples-data/gen-app-builder/search/alphabet-investor-pdfs")  into your configured Vertex AI Search data store.
 
 ## 🧪 Test the RAG Application
 
@@ -109,6 +97,12 @@ Once your data is indexed:
 * Send test queries using the deployed app interface (if applicable)
 * Or trigger inference via Vertex AI API
 * Ensure that answers reflect content from the uploaded documents
+
+Lets run with query on terminal.Open `query.py` Go to the end of file, and set the correct project and datastore IDs:
+
+```bash
+python query.py
+```
 
 ## 🧹 Clean Up Resources
 
@@ -121,5 +115,3 @@ terraform destroy -auto-approve
 ## 📌 Additional Notes
 
 * Ensure your IAM permissions allow you to create and manage required resources.
-* Update any hardcoded values in Terraform or Python scripts before running.
-* Use secure storage or secret managers for API keys or credentials in production.
