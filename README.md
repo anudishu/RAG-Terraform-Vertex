@@ -71,8 +71,8 @@ gcloud services enable \
 Replace placeholders with your actual values:
 
 ```bash
-export PROJECT_ID="your-gcp-project-id"
-export REGION="your-region"   # e.g. us-central1
+export PROJECT_ID="your-gcp-project-id" # get your project id from google cloud console
+export REGION="us-central1"   # e.g. us-central1
 gcloud config set project $PROJECT_ID
 ```
 
