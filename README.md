@@ -232,25 +232,27 @@ This guide walks you through deploying a Retrieval-Augmented Generation (RAG) ap
 
 ## 3️⃣ Set Up Vertex AI Search (Discovery Engine)
 
-1. In Search, Type ** AI Application**.
-2. Under **click on Datastores**, select **Create Data stores**.
-3. Select Data Source **Cloud Storage**.
-4. Leave everything Default and put GCS URL placeholder in the end and Continue **cloud-samples-data/gen-app-builder/search/alphabet-investor-pdfs**
-4. Fill in the required details:
-    - **Datastore Name**: Enter a name for your data store.
-5. Click **Create** and wait for the data store to be provisioned.
-6. Note your **Data Store ID** for later use.
+1. In the Google Cloud Console, search for **AI Application**.
+2. Under **Datastores**, select **Create Data stores**.
+3. Select **Data Source** as **Cloud Storage**.
+4. Leave all settings as default. For the GCS URL, enter:
+   - `cloud-samples-data/gen-app-builder/search/alphabet-investor-pdfs`
+5. Fill in the required details:
+   - **Datastore Name**: Enter a name for your data store.
+6. Click **Create** and wait for the data store to be provisioned.
+7. **Note your Data Store ID** for later use.
 
 ---
 
 ## 4️⃣ Create a Search Engine
 
-1. In **AI Application**, go to **Click on App on right side menu > Create App**.
-2. Select Custom Search
-3. Enter App Name
-4. Enter Company name. Put anything you want
-3. Click Continue
-4. Attach the datastore and done!
+1. In **AI Application**, go to the right-side menu and click **App > Create App**.
+2. Select **Custom Search**.
+3. Enter an **App Name**.
+4. Enter a **Company Name** (you can use any value).
+5. Click **Continue**.
+6. Attach the previously created datastore.
+7. Done!
 
 ---
 
