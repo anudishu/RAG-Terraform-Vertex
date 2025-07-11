@@ -127,14 +127,12 @@ terraform apply -auto-approve
 
 ### 🔧 1. Update `loaddata.py`
 
-Open `loaddata.py` and set the correct project and datastore IDs at the end of the file:
+Open `loaddata.py` and set the correct project ID at the end of the file:
 
 ```python
 PROJECT_ID = "your-gcp-project-id"
-DATASTORE_ID = "your-datastore-id"
 ```
 
-> You can find the `DATASTORE_ID` in the Vertex AI Search console or from Terraform output.
 
 ### ▶️ 2. Run the Data Loader
 
@@ -156,7 +154,7 @@ Once your data is indexed:
 
 #### 🖥️ Run a Query from Terminal
 
-Open `query.py`, set the correct project and datastore IDs at the end of the file, then run:
+Open `query.py`, set the correct project ID at the end of the file, then run:
 
 ```bash
 python query.py
