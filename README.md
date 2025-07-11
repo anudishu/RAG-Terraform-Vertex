@@ -68,7 +68,7 @@ gcloud services enable \
 
 ### 4️⃣ Set Environment Variables
 
-Replace placeholders with your actual values:
+Replace placeholders with your actual values and execute it one-by-one
 
 ```bash
 export PROJECT_ID="your-gcp-project-id" # get your project id from google cloud console
