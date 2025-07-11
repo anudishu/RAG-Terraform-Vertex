@@ -95,6 +95,16 @@ gcloud auth application-default login
 
 ### 6️⃣ Initialize and Apply Terraform Configuration
 
+> **Before you deploy infrastructure:**
+> 
+> Open the `terraform.tfvars` file and update the `project_id` variable with your actual Google Cloud project ID.
+>
+> ```
+> project_id = "your-gcp-project-id"
+> ```
+>
+> Save the file after making the change.
+
 This will provision all required infrastructure on Google Cloud:
 - Discovery Engine Data Store
 - Discovery Engine Search Engine
