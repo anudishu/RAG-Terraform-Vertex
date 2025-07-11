@@ -33,18 +33,18 @@ You can deploy this RAG solution on Google Cloud in two ways:
 
 ## ⚙️ Deployment Steps
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Open Google Cloud Shell or Local Terminal
+
+> You can run the following commands in Google Cloud Shell or your local terminal (with `gcloud` CLI configured).
+
+---
+### 2️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/anudishu/RAG-Terraform-Vertex.git
 cd RAG-Terraform-Vertex
 ```
 
----
-
-### 2️⃣ Open Google Cloud Shell or Local Terminal
-
-> You can run the following commands in Google Cloud Shell or your local terminal (with `gcloud` CLI configured).
 
 ---
 
